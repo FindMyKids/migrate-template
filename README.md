@@ -19,7 +19,7 @@ func main() {
 	
 	templateInstance := template.Wrap(
 		sourceInstance,
-		migration.WithVars(template.M{
+		template.WithVars(template.M{
 			"cluster": "cluster_name",
 			"replicated_path": "/clickhouse/tables/db_name",
 		}),
